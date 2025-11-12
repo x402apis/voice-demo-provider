@@ -23,7 +23,9 @@ const PORT = process.env.PORT || 9001;
 // 1. Create the x402 Provider Server instance
 const x402Provider = createProviderServer({
     wallet: './wallet.json',
+    publicUrl: "https://voice-demo-provider-production.up.railway.app",
     port: Number(PORT),
+    registry: 'https://x402apis.io/api'
 });
 
 // --- NEW: Configure and use the CORS middleware ---
