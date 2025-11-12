@@ -29,11 +29,7 @@ const x402Provider = createProviderServer({
 });
 
 // --- NEW: Configure and use the CORS middleware ---
-const app = x402Provider.getExpressApp();
-app.use(cors({
-    origin: 'http://localhost:3001' // Allow requests ONLY from your client UI
-}));
-// -------------------------------------------------
+const app = x402Provider.getExpressApp();// -------------------------------------------------
 
 // 2. Define the API endpoint
 x402Provider.addAPI(
