@@ -4,6 +4,16 @@ import { handleProxyConnection } from './proxy';
 import { generateSessionToken, SessionPayload } from './auth'; // Assuming SessionPayload is exported
 import dotenv from 'dotenv';
 import cors from 'cors'; // --- NEW: Import the cors middleware ---
+import { writeFileSync } from 'fs';
+
+const walletJson = process.env.WALLET_JSON;
+
+if (walletJson) {
+    writeFileSync('wallet.json', walletJson);
+} else {
+    console.error('WALLET_JSON environment variable not set.');
+    process.exit(1);
+}
 
 // Load environment variables
 dotenv.config();
