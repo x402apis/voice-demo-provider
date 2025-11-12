@@ -1,0 +1,26 @@
+{
+  "name": "voice-demo-provider",
+  "version": "1.0.0",
+  "description": "x402 Provider that acts as a secure gateway to a Deepgram Voice Agent.",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts"
+  },
+  "dependencies": {
+    "@x402apis/node": "^1.0.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/jsonwebtoken": "^9.0.4",
+    "@types/node": "^20.9.0",
+    "@types/ws": "^8.5.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
