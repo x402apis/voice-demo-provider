@@ -7,7 +7,7 @@
 This is the specific README for the provider node.
 
 ````markdown
-# x402 Voice Agent Provider
+# x402 Parallax/OpenAI Voice Agent Provider
 
 [![x402 Protocol](https://img.shields.io/badge/Built%20with-%40x402apis%2Fnode-blue.svg)](https://github.com/x402-apis/x402-router-node)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -27,7 +27,7 @@ This node is built using the [`@x402apis/node`](https://github.com/x402-apis/x40
 
 ## How It Works
 
-This provider is the "missing link" that allows a Web3 user to access a Web2 service without an account or credit card.
+This provider is the "missing link" that allows a Web3 user to access a Web2 service without an account or credit card. It leverages Parallax for the LLM layer and Deepagram for STT and TTS. OpenAI is also an option as the LLM.
 
 ![Provider Flow](./docs/provider-flow.png)
 _(**Note:** You can create a simple diagram for this and add it to a `/docs` folder.)_
