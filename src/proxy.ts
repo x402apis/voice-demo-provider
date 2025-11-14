@@ -101,7 +101,7 @@ export const handleProxyConnection = (clientWs: WebSocket, req: any) => {
                 // --- THIS IS THE FINAL FIX ---
                 // The Gradients API expects a specific format for the model name.
                 // We correct it here on the server.
-                let finalModelId = "qwen/qwen3-235b-instruct-fp8";
+                let finalModelId = clientModel ?? "qwen/qwen3-235b-instruct-fp8";
 
                 // Rebuild the 'think' object with the corrected model ID
                 finalSettings.agent.think = {
