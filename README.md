@@ -6,7 +6,7 @@
 
 This is the specific README for the provider node.
 
-````markdown
+```markdown
 # x402 Parallax/OpenAI Voice Agent Provider
 
 [![x402 Protocol](https://img.shields.io/badge/Built%20with-%40x402apis%2Fnode-blue.svg)](https://github.com/x402-apis/x402-router-node)
@@ -28,6 +28,19 @@ This node is built using the [`@x402apis/node`](https://github.com/x402-apis/x40
 ## How It Works
 
 This provider is the "missing link" that allows a Web3 user to access a Web2 service without an account or credit card. It leverages Parallax for the LLM layer and Deepagram for STT and TTS. OpenAI is also an option as the LLM.
+
+## Gradient Parallax Integration
+
+We successfully integrated Parallax as our core LLM,
+demonstrating a hybrid routing approach:
+
+- Parallax for cost-effective inference
+- Fallback to centralized providers when needed
+
+During development, we identified and reported critical
+streaming bugs that were resolved by Gradient's team,
+improving the platform for all builders.
+```
 
 ![Provider Flow](./docs/provider-flow.png)
 _(**Note:** You can create a simple diagram for this and add it to a `/docs` folder.)_
@@ -56,4 +69,7 @@ cd voice-demo-provider
 # Install dependencies
 npm install
 ```
-````
+
+```
+
+```
